@@ -1,0 +1,60 @@
+body {
+	font-family: 'Montserrat';
+}
+
+h1 {
+	text-align: center;
+}
+
+main {
+	display: flex;
+	height: 500px;
+	justify-content: space-around;
+	margin-bottom: 100px;
+
+	font-family: monospace;
+}
+
+a {
+	color: #b14444;
+	font-style: italic;
+}
+
+a:visited {
+	color: none;
+}
+
+main>div {
+	background: #ffed9222;
+	height: 100%;
+	width: 40vw;
+
+	font-size: 14pt;
+
+	padding: 20px;
+	border-radius: 10px;
+
+	white-space: pre-line;
+	word-wrap: break-word;
+
+	overflow-y: scroll;
+	position: relative;
+}
+
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+
+#txt-input {
+	display: inline;
+	transition: box-shadow .3s ease-in-out;
+}
+
+#txt-input:focus {
+	box-shadow: 0 5px 2px #0009;
+}
+
+#translate-output .correxion {
+	color: blue;
+	font-weight: bold;
+}

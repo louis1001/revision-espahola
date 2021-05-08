@@ -1,27 +1,25 @@
+const vowels = ["a", "e", "i", "o", "u"]
 
-const fs = require('fs')
-const args = process.argv.slice(2)
-
-function getArgContent() {
-	const fileName = args[0]
-	return fs.readFileSync(args[0], 'utf-8')
-}
+const isVowel = (c) => vowels.include(c)
 
 const rules = [
-	["(?<!c)c(e|i)", "z$1"],
+	["cc", "x"],
+	["c(e|i)", "z$1"],
 	["qu", "c"],
 	["ch", "q"],
 	["g(e|i)", "j$1"],
 	["gu(e|i)", "g$1"],
 	["h", ""],
 	["k", "c"],
-	["ll", "y"],
+	
 	["w", "u"],
 	["ñ", "h"],
+	["y([^aeiou]|\W|$)", "i$1"],
+	["ll", "y"],
 	// ["z", "s"],
 ]
 
-function translate(str, wrapper=(x=>x)) {
+export function translate(str, wrapper=(x=>x)) {
 	let result = str
 
 	for (let i = 0; i < rules.length; i++) {
@@ -36,10 +34,3 @@ function translate(str, wrapper=(x=>x)) {
 
 	return result.toLowerCase()
 }
-
-const fileContent = getArgContent()
-const translated = translate(fileContent, x =>
-	"\u001b[33m" + x + "\u001b[m"
-)
-
-console.log(translated)
