@@ -12,7 +12,7 @@ El español tiene cierta belleza en su pronunciación y escritura. A diferencia 
 
 - Eliminar inconsistencias con letras como `r`, que puede ser un sonido fuerte al estar al principio de una palabra, o por ninguna razón aparente, como en `sonrisa`.
 
-- Eliminar sonidos que deben representarse con 2 letras, como `ch` y `rr`. Se le asigna a estos sonidos una de las letras que esta revisión remueve.
+- Eliminar sonidos que deben representarse con 2 letras, como `cc`, `ch` y `rr`. Se le asigna a estos sonidos una de las letras que esta revisión remueve.
 
 - La `ñ`, aunque característica del español, es una `n` con un modificador. Demasiado inconsistente para mi gusto.
 
@@ -30,6 +30,10 @@ a b c q d e f g i j l m n h o p r k s t u v x y z
 - **C**
     
     No mas sonido suave. En español latinoamericano no diferenciamos este de la s, pero mantendré el sonido en `z`, como `ze`, `zi`. Ahora **c** es solo el sonido fuerte, como en `ca`. `ce` y `ci` se leerá como `que` y `qui`.
+
+- **Cc**
+
+    Este sonido puede ser creado con la letra `x`. Así que palabras como `acción` se vuelven`axión`.
 
 - **Ch**
     
