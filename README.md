@@ -67,3 +67,6 @@ a b c q d e f g i j l m n h o p r k s t u v x y z
     
     Letra prestada. Ninguna palabra española la utiliza, y el sonido puede hacerse usando `u` de todos modos.
 
+- **Y**
+
+    Ya no existe como vocal, y en su lugar está `i`. Por ejemplo, la conjunción `y` se vuelve `i`.
