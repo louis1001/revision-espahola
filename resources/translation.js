@@ -6,9 +6,11 @@ addEventListener('load', ()=> {
 	const output = document.getElementById("translate-output")
 
 	function translateInput() {
-		output.innerHTML = translate(txtInput.innerText, (x)=>
-			"<span class='correxion'>" + x + "</span>"
+		let result = translate(txtInput.innerText, (x)=>
+			"<span class='fix'>" + x + "</span>"
 		)
+
+		output.innerHTML = result
 	}
 
 	txtInput.addEventListener('keyup', ()=> translateInput())
